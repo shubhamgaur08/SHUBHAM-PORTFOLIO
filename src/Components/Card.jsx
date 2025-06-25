@@ -1,10 +1,10 @@
 import { Badge, Box, Button, Flex, Heading, HStack, Link, Text } from '@chakra-ui/react'
-// import React from 'react'
 import PropTypes from 'prop-types'; 
 import { BiLinkExternal } from "react-icons/bi";
+import { BiDownload } from "react-icons/bi";
 import { VscGithub } from "react-icons/vsc";
 
-const ProjectCard = ({ title, type, image, description, techStack, github, liveDemo }) => {
+const ProjectCard = ({ title, type, image, description, techStack, github, liveDemo, downloadLink }) => {
   return (
     <Flex flexDirection="column" className='ProjectCard'>
       <Box className='cardImg' backgroundImage={image} />
@@ -21,12 +21,25 @@ const ProjectCard = ({ title, type, image, description, techStack, github, liveD
       </Box>
       <Box>
         <HStack>
-          <Link href={liveDemo} target="_blank">
-            <Button>Live Demo<BiLinkExternal /></Button>
-          </Link>
-          <Link href={github} target="_blank">
-            <Button>Code Base<VscGithub /></Button>
-          </Link>
+          {liveDemo ? (
+            <Link href={liveDemo} target="_blank">
+              <Button>Live Demo<BiLinkExternal /></Button>
+            </Link>
+          ) : downloadLink ? (
+            <Link href={downloadLink} download>
+              <Button>Download <BiDownload /></Button>
+            </Link>
+          ) : null}
+
+          {github ? (
+            <Link href={github} target="_blank">
+              <Button>Code Base<VscGithub /></Button>
+            </Link>
+          ) : image ? (
+            <Link href={image} target="_blank">
+              <Button>Screenshot</Button>
+            </Link>
+          ) : null}
         </HStack>
       </Box>
     </Flex>
@@ -39,8 +52,9 @@ ProjectCard.propTypes = {
   image: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   techStack: PropTypes.arrayOf(PropTypes.string).isRequired,
-  github: PropTypes.string.isRequired,
-  liveDemo: PropTypes.string.isRequired,
+  github: PropTypes.string, // now optional
+  liveDemo: PropTypes.string, // now optional
+  downloadLink: PropTypes.string, // new optional prop
 };
 
 export default ProjectCard

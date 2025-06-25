@@ -4,7 +4,7 @@ import logo from '../Images/favicon.webp'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { VscChromeClose } from 'react-icons/vsc'
 
-import Resume from '../Resume/Yaroslav_Bilko.pdf'
+import Resume from '../Resume/Shubham_Gond_Resume.pdf'
 
 const Navbar = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -16,9 +16,9 @@ const Navbar = () => {
                 {/* <Box>
                     <Image src={logo} alt='Portfolio logo' />
                 </Box> */}
-                <Box className='name' marginLeft={['0', '0', '0', '90px']}>
-                    <Heading> Yaroslav.B</Heading>
-                    <Heading> Yaroslav.B</Heading>
+                <Box className='name' marginLeft={['120px', '150px', '150px', '125px']}>
+                    <Heading> SHUBHAM GAUR</Heading>
+                    <Heading> SHUBHAM GAUR</Heading>
                 </Box>
             </Box>
             <Box display={["none", 'none', 'none', 'flex']} className="nav-options">
@@ -35,7 +35,7 @@ const Navbar = () => {
                     <Button><Link href="#projects"><span>Projects</span></Link></Button>
                 </Box>
                 <Box>
-                    <Button onClick={()=>{window.open("https://drive.google.com/file/d/161wJ3vB9M4IF8qtbn_Eeky6kN6e3JfYS/view?usp=sharing", '_blank')}}><a href={Resume} download="Yaroslav_Bilko"><span>Resume</span></a></Button>
+                    <Button onClick={()=>{window.open("https://drive.google.com/file/d/1DNC4mQpszhVrDQY0qzv6ZaIs345NT3RX/view?usp=drive_link", '_blank')}}><a href={Resume} download="Shubham_Gond_Resume"><span>Resume</span></a></Button>
                 </Box>
                 <Box>
                     <Button><Link href="#contactMe"><span>Contact</span></Link></Button>
@@ -64,8 +64,8 @@ const Navbar = () => {
                                 <Image src={logo} alt='Portfolio logo' />
                             </Box>
                             <Box className='name' >
-                                <Heading> Yaroslav.B</Heading>
-                                <Heading> Yaroslav.B</Heading>
+                                <Heading> SHUBHAM GAUR</Heading>
+                                <Heading> SHUBHAM GAUR</Heading>
                             </Box>
                         </Box>
                     </DrawerHeader>

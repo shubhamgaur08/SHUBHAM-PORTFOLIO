@@ -26,7 +26,8 @@ p::selection {
 
 /* global class */
 .themeText {
-    color: #6c63ff;
+    color: #58b845;
+    
 }
 
 
@@ -106,23 +107,32 @@ p::selection {
 .name>h2 {
     white-space: nowrap;
     position: absolute;
-    left: 50%;
+    left: 60%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
 
 .name h2:nth-child(1) {
-    background: linear-gradient(to left, #480da1, #ec633d);
+    background: linear-gradient(90deg, #11998e 0%, #38ef7d 100%);
+   
     -webkit-text-stroke: 2px transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .name h2:nth-child(2) {
-    color: #3f7cdd;
+    color: #4297cf ;
     animation: waterWave 4s ease-in-out infinite;
 }
 
+@media all and (max-width:768px) {
+    
+    .name>h2 {
+        left: 140%;
+        margin-bottom: 20px;
+        
+    }
+}
 
 /* navbar options */
 .nav-options {
@@ -276,7 +286,7 @@ p::selection {
 
 .content .text {
     white-space: nowrap;
-    color: #fff;
+    color: #ffffff;
     font-weight: 700;
     text-transform: uppercase;
     transform: scale(1.15);
@@ -461,9 +471,14 @@ p::selection {
     justify-content: center;
     gap: 20px 30px;
 }
-
+@media (max-width: 600px) {
+    .skills .skill {
+      width: 23vw !important;
+      max-width: 300px;
+    }
+  }
 .skill {
-    width: 90px;
+    width: 115px;
     box-shadow: rgba(190, 215, 244, 0.4) 0px 0px 0px 2px, rgba(208, 227, 248, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.418) 0px 1px 0px inset;
     border-radius: 8px;
     padding: 8px;
@@ -472,6 +487,7 @@ p::selection {
     align-items: center;
     cursor: pointer;
 }
+
 
 .skill:hover {
     transform: translateY(-10px);

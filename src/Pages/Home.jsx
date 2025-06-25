@@ -17,7 +17,7 @@ import ProjectCard from '../Components/Card';
 import Svg1 from '../Components/Svg1';
 import Svg2 from '../Components/Svg2';
 import Svg3 from '../Components/Svg3';
-import Resume from '../Resume/Yaroslav_Bilko.pdf'
+import Resume from '../Resume/Shubham_Gond_Resume.pdf'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
@@ -91,11 +91,11 @@ const Home = () => {
                     <Box data-aos="fade-down">
                         <Heading>Hey! <span className='themeText'>I am</span></Heading>
                         <Box className='content'>
-                            <Heading fontSize="3.3em" className='text' data-text="Yaroslav Bilko"><span className='themeText'>Yaroslav Bilko</span></Heading>
+                            <Heading fontSize="3.3em" className='text' data-text="Shubham Gaur"><span className='themeText'>Shubham Gaur</span></Heading>
                         </Box>
-                        <Text>Am a Web & mobile Developer, passionate and experienced in building Web applications.</Text>
-                        <HStack className='hireMe' onClick={() => { window.open("https://drive.google.com/file/d/161wJ3vB9M4IF8qtbn_Eeky6kN6e3JfYS/view?usp=sharing", '_blank') }}>
-                            <a href={Resume} download="Yaroslav_Bilko">
+                        <Text>I am a MERN Stack & React Native Developer, passionate and experienced in building modern Web and Mobile Applications.</Text>
+                        <HStack className='hireMe' onClick={() => { window.open("https://drive.google.com/file/d/1DNC4mQpszhVrDQY0qzv6ZaIs345NT3RX/view?usp=drive_link", '_blank') }}>
+                            <a href={Resume} download="Shubham_Gond_Resume">
                                 <Button>Resume <LuCloudDownload /></Button>
                             </a>
                         </HStack>
@@ -108,9 +108,9 @@ const Home = () => {
 
             {/* About me */}
 
-            <Box id="aboutMe">
-                <Heading size={"3xl"}>About <span className='themeText'>Me</span></Heading>
-                <Flex flexDirection={['column-reverse', 'column-reverse', 'column-reverse', 'row']} alignItems="center" h="100%">
+            <Box id="aboutMe" >
+                <Heading size={"3xl"} mb={10}>About <span className='themeText'>Me</span></Heading>
+                <Flex flexDirection={['column-reverse', 'column-reverse', 'column-reverse', 'row']} alignItems="center" mt={5} h="100%">
                     <div data-aos="fade-right">
                         <Svg3 />
                     </div>
@@ -118,13 +118,7 @@ const Home = () => {
                     <Flex data-aos="fade-left">
                         
                         <Box>
-                            <Text fontSize={"2xl"}> Full Stack Developer with 8+ years of experience in designing and
- developing innovative web applications across diverse industries.
- Proficient in Python, Django, React, and other modern frameworks,
- delivering efficient and scalable solutions that enhance user satisfaction
- and operational performance. Committed to leveraging cutting-edge
- technologies and collaborative efforts to drive forward-thinking
- projects and achieve transformative results.</Text>
+                            <Text fontSize={"2xl"}> Full Stack Developer with hands-on experience in building web and mobile applications using the MERN stack and React Native. Completed a 7-month internship, contributing to both frontend and backend development, including REST APIs and database integration. Proficient in JavaScript, React, Node.js, Express, MongoDB, and React Native, with a focus on clean code, scalable architecture, and performance optimization.</Text>
                         </Box>
                     </Flex>
                 </Flex>
@@ -139,12 +133,22 @@ const Home = () => {
                     <ul>
                         <li>
                             <Box className='content'>
-                                <Heading size="lg">KYIV NATIONAL UNIVERSITY OF CONSTRUCTION AND ARCHITECTURE</Heading>
+                                <Heading size="lg">ALLAHABAD STATE UNIVERSITY , PRAYAGRAJ</Heading>
                                 <Text>
-                                Bachelor of Computer Science</Text>
+                                Bachelor of Computer Application (BCA)</Text>
                             </Box>
                             <Box className='time'>
-                                <Text> 2011 - 2015</Text>
+                                <Text> 2017 - 2020</Text>
+                            </Box>
+                        </li>
+                        <li>
+                            <Box className='content'>
+                                <Heading size="lg">J.S UNIVERSITY SIKOHABAD, U.P</Heading>
+                                <Text>
+                                Master of Computer Application (MCA)</Text>
+                            </Box>
+                            <Box className='time'>
+                                <Text> 2021 - 2023</Text>
                             </Box>
                         </li>
                     </ul>
@@ -217,30 +221,22 @@ const Home = () => {
                     <ul>
                         <li>
                             <Box className='content'>
-                                <Heading size="lg">Senior Python/Django Developer</Heading>
+                                <Heading size="lg">REACT NATIVE DEVELOPER INTERN</Heading>
                                 <Text>
-                                AnvilEight | Kharkiv</Text>
+                                Growwlancer Pvt. Ltd </Text>
                             </Box>
                             <Box className='time'>
-                                <Text>2022- 2023</Text>
+                                <Text>Apr 2024 - Sep 2024</Text>
                             </Box>
                         </li>
+                      
                         <li>
                             <Box className='content'>
-                                <Heading size="lg"> Backend Engineer</Heading>
-                                <Text>Yalantis | Dnipro</Text>
+                                <Heading size="lg"> SOFTWARE DEVELOPER INTERN</Heading>
+                                <Text>Kipss AI</Text>
                             </Box>
                             <Box className='time'>
-                                <Text> 2019 - 2020</Text>
-                            </Box>
-                        </li>
-                        <li>
-                            <Box className='content'>
-                                <Heading size="lg"> Full Stack Developer</Heading>
-                                <Text>SoftServe | Lviv</Text>
-                            </Box>
-                            <Box className='time'>
-                                <Text>2017- 2018</Text>
+                                <Text>Oct 2024 - Nov 2024</Text>
                             </Box>
                         </li>
                     </ul>
@@ -254,7 +250,7 @@ const Home = () => {
                     containerClass="carousel-container"
                     swipeable={true}
                     draggable={true}
-                    showDots={false}
+                    showDots={true}
                     keyBoardControl={true}
                     responsive={responsive}
                     infinite={true}>
