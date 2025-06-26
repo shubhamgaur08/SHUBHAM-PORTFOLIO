@@ -344,7 +344,7 @@ const Home = () => {
             {/* footer */}
             <Flex id='footer'>
                 <Text>© Portfolio by Shubham Gaur | All rights reserved.</Text>
-                <Text>Made with ❤️ by Shubham Gaur</Text>
+                <Text>Made with ❤️ by Shubham</Text>
             </Flex>
         </Box >
     )

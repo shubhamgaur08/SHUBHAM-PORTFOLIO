@@ -157,58 +157,34 @@ export const skills = [
 export const projects = [
     {
         id: 0,
-        title: 'Kanban-Board',
-        type: 'Task-Manager',
-        image: '/webpages/kanban-webpage.webp',
-        description: 'Kanban-Board is Task management web-application, where you can create different boards and for each specific board and create different tasks with subtasks',
-        techStack: ['React', 'Chakra-UI', 'Express.js', 'Node.js'],
-        github: 'https://github.com/yaroslav414/KanBan_Board',
-      
-        downloadLink: 'https://kanban-board-by-atanu.netlify.app/'
+        title: 'CapGram AI',
+        type: 'Android App',
+        image: '/pics/Capgram.jpg',
+        description: 'CapGram AI is an Android application that allows users to generate Captions & Bio using AI for social media. it can generate caption using text and image.',
+        techStack: ['React Native', 'Express.js', 'AI'],
+        Screenshot: 'https://drive.google.com/drive/folders/1jtKaWWU3_p86D98jsR_rj5HKVhzBF94w',
+        downloadLink: 'https://drive.google.com/file/d/198Dt3FNx6cU-AfBCuLUxAorFA-iwjQgI/view'
     },
-   
+    {
+        id: 1,
+        title: 'FlirtX AI',
+        type: 'Android App',
+        image: '/pics/FLIRTX.jpg',
+        description: 'FlirtX AI is an Android application that allows users to generate Flirt lines & Bio using AI for social media and chat. it can generate flirt lines using text. gift suggestion section is also available.',
+        techStack: ['React Native', 'Express.js', 'AI'],
+        Screenshot: 'https://drive.google.com/drive/folders/1w9l83LhEel3aUxZayTMh3O2HbvaGpWdd',
+        downloadLink: 'https://play.google.com/store/apps/details?id=com.flirtx'
+    },
     {
         id: 2,
-        title: "ForeignBazar",
-        type: "E-COMMERCE",
-        image: "/webpages/foreignbazar-webpage.webp",
-        description: "ForeignBazar is an e-commerce website, where you can take a look on all daily needs like Clothes, Cosmetics etc. And you can go for order them. It's have the admin functionality.",
-        techStack: ["React", "CSS", "ReactJS", "Chakra-UI"],
-        github: "https://github.com/yaroslav414/Foreign_Bazar",
-        liveDemo: "https://foreign-bazar.netlify.app/"
-    },
+        title: "BEAR-PANEL (PC)",
+        type: "ADMIN-PANEL",
+        image: "/pics/BEARPANEL.jpg",
+        description: "BEAR-PANEL is an admin panel that allows users to manage their data. chart and graph are also available.",
+        techStack: ["React JS", "Material-UI", "Chart-js", ],
+        github: "https://github.com/shubhamgaur08/Bear-Panel",
+        liveDemo: "https://bear-panel.vercel.app/"
+    }
 
-    {
-        id: 3,
-        title: 'Fast-AIM',
-        type: 'Multi-Player Game',
-        image: '/webpages/fast-aim-webpage.webp',
-        description: 'Fast Aim is a gaming Web-application that allows playing both Single Player and Multi-Player. Try to beat your opponent',
-        techStack: ['React', 'Chakra-UI', 'TypeScript', 'Express.js', 'Web-Socket', 'Node.js'],
-        github: 'https://github.com/yaroslav414/Fast_aim',
-        liveDemo: 'https://fast-aim-game.vercel.app/'
-    },
-  
-    {
-        id: 4,
-        title: "GadgetRambo",
-        type: "E-COMMERCE",
-        image: "/webpages/gadget-rambo-webpage.webp",
-        description: "GadgetRambo is a technology review, news and e-commerce platform. Here we provided full e-commerce flow and also the admin part.",
-        techStack: ["Typescript", "Next.js", "Redux", "CSS", "Firebase", "thunk", "chakra-ui", "MUI"],
-        github: "https://github.com/yaroslav414/Gadget_Rambo",
-        liveDemo: "https://gadget-rambo.vercel.app/"
-    },
-  
-    {
-        id: 6,
-        title: "Neifty PM",
-        type: "PROJECT MANAGER",
-        image: "/webpages/neifty-pm-webpage.webp",
-        description: "Nifty, it's a remote collaboration hub to manage Projects, tasks, communication all in one place. Here you can collaborate with your team within an easy way.",
-        techStack: ["HTML", "CSS", "JavaScript"],
-        github: "https://github.com/yaroslav414/Gadget_Rambo",
-        liveDemo: "https://nifty-cloned-by-atanu.netlify.app/"
-    },
    
 ]

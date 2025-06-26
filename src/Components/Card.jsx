@@ -4,7 +4,7 @@ import { BiLinkExternal } from "react-icons/bi";
 import { BiDownload } from "react-icons/bi";
 import { VscGithub } from "react-icons/vsc";
 
-const ProjectCard = ({ title, type, image, description, techStack, github, liveDemo, downloadLink }) => {
+const ProjectCard = ({ title, type, image, Screenshot, description, techStack, github, liveDemo, downloadLink }) => {
   return (
     <Flex flexDirection="column" className='ProjectCard'>
       <Box className='cardImg' backgroundImage={image} />
@@ -35,8 +35,8 @@ const ProjectCard = ({ title, type, image, description, techStack, github, liveD
             <Link href={github} target="_blank">
               <Button>Code Base<VscGithub /></Button>
             </Link>
-          ) : image ? (
-            <Link href={image} target="_blank">
+          ) : Screenshot ? (
+            <Link href={Screenshot} target="_blank">
               <Button>Screenshot</Button>
             </Link>
           ) : null}
@@ -52,6 +52,7 @@ ProjectCard.propTypes = {
   image: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   techStack: PropTypes.arrayOf(PropTypes.string).isRequired,
+  Screenshot: PropTypes.string, // now optional
   github: PropTypes.string, // now optional
   liveDemo: PropTypes.string, // now optional
   downloadLink: PropTypes.string, // new optional prop
