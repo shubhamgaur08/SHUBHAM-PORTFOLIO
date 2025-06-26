@@ -289,16 +289,16 @@ const Home = () => {
                         <Flex className='contact-info'>
                             <HStack>
                                 <SiGmail color="#e34133" />
-                                <Text>bilko.yaroslavv@gmail.com</Text>
+                                <Text>shubhamgaur672@gmail.com</Text>
                             </HStack>
                             <HStack>
                                 <FaPhoneAlt color="#00a14f" />
-                                <Text>+380 98 771 8801</Text>
+                                <Text>+919118708250</Text>
                             </HStack>
                         </Flex>
                         <Flex gap={["10px", "20px", "20px", "40px"]}>
-                            <Link href='https://wa.me/380987718801' target="_blank">
-                                <Tooltip label='+380 98 771 8801'>
+                            <Link href='https://wa.me/919118708250' target="_blank">
+                                <Tooltip label='+91 9118708250'>
                                     <Box className='social-icons'>
                                         <Box>
                                             <Image w="100%" src="https://brandlogos.net/wp-content/uploads/2018/10/whatsapp-logo.png" alt='Whatsapp brand logo' />
@@ -307,18 +307,18 @@ const Home = () => {
                                 </Tooltip>
                             </Link>
 
-                            {/* <Link href='https://www.linkedin.com/in/atanu-karmakar-dev/' target="_blank">
-                                <Tooltip label='Atanu Karmakar'>
+                            <Link href='https://www.linkedin.com/in/shubhamgaur07/' target="_blank">
+                                <Tooltip label='LinkedIn'>
                                     <Box className='social-icons'>
                                         <Box>
                                             <Image w="100%" src="https://openvisualfx.com/wp-content/uploads/2019/10/linkedin-icon-logo-png-transparent.png" alt='Linkedin brand logo' />
                                         </Box>
                                     </Box>
                                 </Tooltip>
-                            </Link> */}
+                            </Link>
 
-                            <Link href="https://github.com/Atanu8250" target="_blank">
-                                <Tooltip label='yaroslav414'>
+                            <Link href="https://github.com/shubhamgaur08" target="_blank">
+                                <Tooltip label='Github'>
                                     <Box className='social-icons'>
                                         <Box>
                                             <Image w="100%" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt='Github brand logo' />
@@ -327,8 +327,8 @@ const Home = () => {
                                 </Tooltip>
                             </Link>
 
-                            <Link href="mailto:bilko.yaroslavv@gmail.com" target="_blank">
-                                <Tooltip label='bilko.yaroslavv@gmail.com'>
+                            <Link href="mailto:shubhamgaur672@gmail.com" target="_blank">
+                                <Tooltip label='Gmail'>
                                     <Box className='social-icons'>
                                         <Box>
                                             <Image w="100%" src="https://1000logos.net/wp-content/uploads/2021/05/Gmail-logo.png" alt='Gmail brand logo' />
@@ -343,8 +343,8 @@ const Home = () => {
 
             {/* footer */}
             <Flex id='footer'>
-                <Text>© Portfolio by Yaroslav B. | All rights reserved.</Text>
-                <Text>Made with by Yaroslav</Text>
+                <Text>© Portfolio by Shubham Gaur | All rights reserved.</Text>
+                <Text>Made with ❤️ by Shubham Gaur</Text>
             </Flex>
         </Box >
     )
