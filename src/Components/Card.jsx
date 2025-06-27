@@ -1,7 +1,8 @@
 import { Badge, Box, Button, Flex, Heading, HStack, Link, Text } from '@chakra-ui/react'
 import PropTypes from 'prop-types'; 
 import { BiLinkExternal } from "react-icons/bi";
-import { BiDownload } from "react-icons/bi";
+import { BiImage } from 'react-icons/bi';
+import { BiCloudDownload } from "react-icons/bi";
 import { VscGithub } from "react-icons/vsc";
 
 const ProjectCard = ({ title, type, image, Screenshot, description, techStack, github, liveDemo, downloadLink }) => {
@@ -27,7 +28,7 @@ const ProjectCard = ({ title, type, image, Screenshot, description, techStack, g
             </Link>
           ) : downloadLink ? (
             <Link href={downloadLink} download>
-              <Button>Download <BiDownload /></Button>
+              <Button>Download <BiCloudDownload /></Button>
             </Link>
           ) : null}
 
@@ -37,7 +38,7 @@ const ProjectCard = ({ title, type, image, Screenshot, description, techStack, g
             </Link>
           ) : Screenshot ? (
             <Link href={Screenshot} target="_blank">
-              <Button>Screenshot</Button>
+              <Button>Screenshot<BiImage /></Button>
             </Link>
           ) : null}
         </HStack>

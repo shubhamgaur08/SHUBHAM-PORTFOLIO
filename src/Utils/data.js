@@ -170,7 +170,7 @@ export const projects = [
         title: 'FlirtX AI',
         type: 'Android App',
         image: '/pics/FLIRTX.jpg',
-        description: 'FlirtX AI is an Android application that allows users to generate Flirt lines & Bio using AI for social media and chat. it can generate flirt lines using text. gift suggestion section is also available.',
+        description: 'FlirtX AI is an Android application that allows users to generate Flirt lines & Bio using AI for chat and profile. it can generate flirt lines using text. gift suggestion section is also available.',
         techStack: ['React Native', 'Express.js', 'AI'],
         Screenshot: 'https://drive.google.com/drive/folders/1w9l83LhEel3aUxZayTMh3O2HbvaGpWdd',
         downloadLink: 'https://play.google.com/store/apps/details?id=com.flirtx'
@@ -180,10 +180,20 @@ export const projects = [
         title: "BEAR-PANEL (PC)",
         type: "ADMIN-PANEL",
         image: "/pics/BEARPANEL.jpg",
-        description: "BEAR-PANEL is an admin panel that allows users to manage their data. chart and graph are also available.",
+        description: "BEAR-PANEL is an admin panel that allows users to manage their data. chart and graph are also available. It's have the admin functionality with lot of features with dark mode and light mode. ",
         techStack: ["React JS", "Material-UI", "Chart-js", ],
         github: "https://github.com/shubhamgaur08/Bear-Panel",
         liveDemo: "https://bear-panel.vercel.app/"
+    },
+    {
+        id: 3,
+        title: "BEARNOTE",
+        type: "WEB-APP",
+        image: "/pics/bearnote.jpg",
+        description: "BearNote is made from the pain of writing all the things in notebook which is very hectic :(, So we made an online web platform where you can create, edit, upload, delete your notes securely. ",
+        techStack: ["React JS", "Express.js", "MongoDB"],
+        github: "https://github.com/shubhamgaur08/bearnote--code",
+        liveDemo: "https://bearnote.vercel.app/"
     }
 
    
