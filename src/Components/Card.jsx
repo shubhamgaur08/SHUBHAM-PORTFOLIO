@@ -27,7 +27,7 @@ const ProjectCard = ({ title, type, image, Screenshot, description, techStack, g
               <Button>Live Demo<BiLinkExternal /></Button>
             </Link>
           ) : downloadLink ? (
-            <Link href={downloadLink} download>
+            <Link href={downloadLink} download target="_blank">
               <Button>Download <BiCloudDownload /></Button>
             </Link>
           ) : null}
