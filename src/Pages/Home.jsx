@@ -51,14 +51,14 @@ const Home = () => {
     const toast = useToast()
 
     useEffect(() => {
-        // * it's from Aos library to to use scroll designing
+        // * it's from Aos library to  use scroll designing
         Aos.init()
     }, [])
 
     const sendEmail = (e) => {
         e.preventDefault();
-
-        emailjs.sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_SERVICE_TEMPLATE, form.current, import.meta.env.VITE_SERVICE_SECRET).then(() => {
+      
+        emailjs.sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_SERVICE_TEMPLATE, form.current, import.meta.env.VITE_PUBLIC_KEY).then(() => {
 
             toast({
                 position: 'top-right',
@@ -71,7 +71,7 @@ const Home = () => {
 
             form.current.reset();
         }, (error) => {
-            console.log(error.text);
+            console.log(error);
             toast({
                 position: 'top-right',
                 title: 'Email Not sent.',
