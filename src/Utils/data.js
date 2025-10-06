@@ -155,8 +155,18 @@ export const skills = [
 ]
 
 export const projects = [
-    {
+      {
         id: 0,
+        title: "SHOPYBEAR",
+        type: 'Android App',
+        image: "/pics/shopybear.jpg",
+        description: "Discover a modern shopping experience with our sleek E-commerce app featuring smooth navigation and an intuitive interface 🛍️.Easily sign up or log in with secure OTP verification and manage your addresses effortlessly. Add your favorite products to Cart or Wishlist, and explore categories, Bestsellers, Trending, and Recommended sections.Powered by Express.js, MongoDB, and Cloudinary — enjoy a dynamic platform where 80% of the app is admin-controlled. ⚡",
+          techStack: ['React Native', 'Express.js', 'Redux Saga', 'Cloudinary', 'MongoDB'],
+        Screenshot: 'https://drive.google.com/drive/folders/18aL-IUrMt3xzPtFdTj4ol51cxP6e8UtD?usp=sharing',
+        downloadLink: 'https://drive.google.com/file/d/1tJe8idoP--bWImgJM_fi7Ke6u1AN8bUL/view?usp=drive_link'
+    },
+    {
+        id: 1,
         title: 'CapGram AI',
         type: 'Android App',
         image: '/pics/Capgram.jpg',
@@ -166,7 +176,7 @@ export const projects = [
         downloadLink: 'https://drive.google.com/file/d/198Dt3FNx6cU-AfBCuLUxAorFA-iwjQgI/view'
     },
     {
-        id: 1,
+        id: 2,
         title: 'FlirtX AI',
         type: 'Android App',
         image: '/pics/FLIRTX.jpg',
@@ -176,7 +186,7 @@ export const projects = [
         downloadLink: 'https://play.google.com/store/apps/details?id=com.flirtx'
     },
     {
-        id: 2,
+        id: 3,
         title: "BEAR-PANEL (PC)",
         type: "ADMIN-PANEL",
         image: "/pics/BEARPANEL.jpg",
@@ -186,7 +196,7 @@ export const projects = [
         liveDemo: "https://bear-panel.vercel.app/"
     },
     {
-        id: 3,
+        id: 4,
         title: "BEARNOTE",
         type: "WEB-APP",
         image: "/pics/bearnote.jpg",
@@ -195,16 +205,7 @@ export const projects = [
         github: "https://github.com/shubhamgaur08/bearnote--code",
         liveDemo: "https://bearnote.vercel.app/"
     },
-    {
-        id: 4,
-        title: "SHOPYBEAR",
-        type: 'Android App',
-        image: "/pics/shopybear.jpg",
-        description: "BearNote is made from the pain of writing all the things in notebook which is very hectic :(, So we made an online web platform where you can create, edit, upload, delete your notes securely. ",
-          techStack: ['React Native', 'Express.js', 'Redux Saga'],
-        Screenshot: 'https://drive.google.com/drive/folders/1jtKaWWU3_p86D98jsR_rj5HKVhzBF94w',
-        downloadLink: 'https://drive.google.com/file/d/198Dt3FNx6cU-AfBCuLUxAorFA-iwjQgI/view'
-    }
+  
 
    
 ]

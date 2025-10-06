@@ -69,7 +69,7 @@ const ProjectCard = ({ title, type, image, Screenshot, description, techStack, g
         {/* Project Image */}
         <MotionBox 
           className='project-card-image'
-          h={["210px", "250px"]}
+          h={["210px", "270px"]}
           w="100%"
           // pa={2}
 
@@ -156,12 +156,12 @@ const ProjectCard = ({ title, type, image, Screenshot, description, techStack, g
         <VStack 
           align="stretch" 
           spacing={4} 
-          p={6} 
+          p={4} 
           flex="1"
           justify="space-between"
         >
           {/* Title and Description */}
-          <VStack align="stretch" spacing={3}>
+          <VStack align="stretch" spacing={1}>
             <Heading 
               size="lg" 
               color="white"
@@ -188,6 +188,7 @@ const ProjectCard = ({ title, type, image, Screenshot, description, techStack, g
               fontSize="xs" 
               color="green.400" 
               fontWeight="600" 
+              mt={-2}
               mb={2}
               textTransform="uppercase"
               letterSpacing="0.5px"
