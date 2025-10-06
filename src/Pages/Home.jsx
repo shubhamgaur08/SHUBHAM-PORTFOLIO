@@ -407,7 +407,7 @@ const Home = () => {
                   }}
                 >
                   <Image
-                    src="/src/Images/me1.jpg"
+                    src="/pics/me1.jpg"
                     alt="Shubham Gond - Portfolio"
                     w="100%"
                     h="100%"
@@ -512,7 +512,7 @@ const Home = () => {
                   }}
                 >
                   <Image
-                    src="/src/Images/me4.jpg"
+                    src="/pics/me4.jpg"
                     alt="Shubham Gond - Portfolio"
                     w="100%"
                     h="100%"
