@@ -1,10 +1,11 @@
-import { Badge, Box, Button, Flex, Heading, HStack, Link, Text, VStack, useColorModeValue } from '@chakra-ui/react'
+import { Badge, Box, Button, Flex, Heading, HStack, Link, Text, VStack, useColorModeValue, Image } from '@chakra-ui/react'
 import PropTypes from 'prop-types'; 
 import { BiLinkExternal } from "react-icons/bi";
 import { BiImage } from 'react-icons/bi';
 import { BiCloudDownload } from "react-icons/bi";
 import { VscGithub } from "react-icons/vsc";
 import { motion } from 'framer-motion';
+import { useState } from 'react';
 
 const MotionBox = motion(Box);
 const MotionFlex = motion(Flex);
@@ -13,6 +14,29 @@ const ProjectCard = ({ title, type, image, Screenshot, description, techStack, g
   const cardBg = useColorModeValue('rgba(255, 255, 255, 0.05)', 'rgba(255, 255, 255, 0.05)');
   const cardBorder = useColorModeValue('rgba(255, 255, 255, 0.1)', 'rgba(255, 255, 255, 0.1)');
   
+  // State for image loading and error handling
+  const [imageError, setImageError] = useState(false);
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  // Function to get the correct image path
+  const getImagePath = (imagePath) => {
+    if (!imagePath) return null;
+    
+    // If it's already a full URL, return as is
+    if (imagePath.startsWith('http://') || imagePath.startsWith('https://')) {
+      return imagePath;
+    }
+    
+    // Handle relative paths - remove leading slash and ensure it points to public folder
+    const cleanPath = imagePath.startsWith('/') ? imagePath.slice(1) : imagePath;
+    return `/${cleanPath}`;
+  };
+
+  // Fallback image - a simple gradient or placeholder
+  const fallbackImage = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='220' viewBox='0 0 400 220'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2358b845;stop-opacity:0.3' /%3E%3Cstop offset='100%25' style='stop-color:%2358b845;stop-opacity:0.1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grad)'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial, sans-serif' font-size='16' fill='%23ffffff' text-anchor='middle' dy='.3em'%3E${encodeURIComponent(title)}%3E%3C/text%3E%3C/svg%3E";
+
+  const finalImagePath = getImagePath(image);
+
   return (
     <MotionBox
       className="project-card-container"
@@ -45,27 +69,67 @@ const ProjectCard = ({ title, type, image, Screenshot, description, techStack, g
         {/* Project Image */}
         <MotionBox 
           className='project-card-image'
-          backgroundImage={`url(${image})`}
-          backgroundSize="cover"
-          backgroundPosition="center"
-          backgroundRepeat="no-repeat"
-          h="220px"
+          h={["210px", "250px"]}
+          w="100%"
+          // pa={2}
+
+          alignSelf="center"
           position="relative"
-          _before={{
-            content: '""',
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            bg: 'linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.7) 100%)',
-            zIndex: 1
-          }}
+          overflow="hidden"
+          bg="rgba(88, 184, 69, 0.1)"
           whileHover={{
             scale: 1.05,
             transition: { duration: 0.3 }
           }}
         >
+          {/* Hidden image for preloading and error handling */}
+          {finalImagePath && (
+            <Image
+              src={finalImagePath}
+              alt={title}
+              position="absolute"
+              // p={3}
+              top="0"
+              left="0"
+              w="100%"
+              h="100%"
+              objectFit="contain"
+              opacity={imageLoaded && !imageError ? 1 : 0}
+              transition="opacity 0.3s ease"
+              onLoad={() => setImageLoaded(true)}
+              onError={() => {
+                setImageError(true);
+                setImageLoaded(false);
+              }}
+            />
+          )}
+          
+          {/* Fallback image */}
+          {(imageError || !finalImagePath || !imageLoaded) && (
+            <Image
+              src={fallbackImage}
+              alt={`${title} placeholder`}
+              position="absolute"
+              top="0"
+              left="0"
+              w="100%"
+              h="100%"
+              objectFit="cover"
+              opacity={1}
+            />
+          )}
+
+          {/* Gradient overlay */}
+          <Box
+            position="absolute"
+            top="0"
+            left="0"
+            right="0"
+            bottom="0"
+            bg="linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.7) 100%)"
+            zIndex={1}
+          />
+
           {/* Project Type Badge */}
           <Badge
             position="absolute"

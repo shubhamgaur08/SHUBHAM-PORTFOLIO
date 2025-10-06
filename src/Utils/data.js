@@ -194,6 +194,16 @@ export const projects = [
         techStack: ["React JS", "Express.js", "MongoDB"],
         github: "https://github.com/shubhamgaur08/bearnote--code",
         liveDemo: "https://bearnote.vercel.app/"
+    },
+    {
+        id: 4,
+        title: "SHOPYBEAR",
+        type: 'Android App',
+        image: "/pics/shopybear.jpg",
+        description: "BearNote is made from the pain of writing all the things in notebook which is very hectic :(, So we made an online web platform where you can create, edit, upload, delete your notes securely. ",
+          techStack: ['React Native', 'Express.js', 'Redux Saga'],
+        Screenshot: 'https://drive.google.com/drive/folders/1jtKaWWU3_p86D98jsR_rj5HKVhzBF94w',
+        downloadLink: 'https://drive.google.com/file/d/198Dt3FNx6cU-AfBCuLUxAorFA-iwjQgI/view'
     }
 
    
