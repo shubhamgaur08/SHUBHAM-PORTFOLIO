@@ -23,7 +23,7 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 import { VscChromeClose } from 'react-icons/vsc'
 import { FiHome, FiUser, FiCode, FiFolder, FiFileText, FiMail } from 'react-icons/fi'
 
-import Resume from '../Resume/Shubham_Gond_Resume.pdf'
+// import Resume from '../Resume/Shubham_Gound_Resume.pdf'
 
 const Navbar = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -90,7 +90,7 @@ const Navbar = () => {
     }
 
     const handleResumeClick = () => {
-        window.open("https://drive.google.com/file/d/1DNC4mQpszhVrDQY0qzv6ZaIs345NT3RX/view?usp=drive_link", '_blank')
+        window.open("https://drive.google.com/file/d/1iAwW6BD188cicHAjNMHrnOPF-N7n3ugy/view?usp=drive_link", '_blank')
     }
 
     return (

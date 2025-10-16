@@ -42,7 +42,7 @@ import ProjectCard from '../Components/Card'
 // import Svg1 from '../Components/Svg1'
 import Svg2 from '../Components/Svg2'
 // import Svg3 from '../Components/Svg3'
-import Resume from '../Resume/Shubham_Gond_Resume.pdf'
+import Resume from '../Resume/Shubham_Gound_Resume.pdf'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
 
@@ -311,7 +311,7 @@ const Home = () => {
                   <Button
                     as="a"
                     href={Resume}
-                    download="Shubham_Gond_Resume"
+                    download="Shubham_Gound_Resume_FullStackDeveloper"
                     size="lg"
                     bg="green.400"
                     color="white"
